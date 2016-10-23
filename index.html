@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Feedback</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header class="logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center col-xs-2 col-xs-offset-5">
+                <img src="img/img1.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-1 col-xs-6 col-xs-offset-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4EoUz39nPMM?rel=0&amp;showinfo=0"
+                        frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="feedback">
+
+    <div class="container">
+
+        <form id="contactForm">
+
+            <div class="row">
+
+                <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                    <div class="form-group has-feedback">
+                        <input type="email" id="email" name="email" class="form-control" required="required"
+                               value="" placeholder="Ваша электронная почта" maxlength="30">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                    <div class="form-group has-feedback">
+                        <input type="text" id="name" name="name" class="form-control" required="required"
+                               value="" placeholder="Ваше имя" minlength="2" maxlength="30">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1">
+                    <div class="form-group has-feedback">
+                                <textarea id="message" class="form-control" rows="3"
+                                          placeholder="Тема сообщения" minlength="5"
+                                          maxlength="500" required="required"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-md-offset-3 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
+                    <button type="submit" class="btn btn-success btn-send">Отправить</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

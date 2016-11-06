@@ -20,11 +20,13 @@
 </head>
 <body>
 
-<header class="logo">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center col-xs-2 col-xs-offset-5">
-                <img src="img/img1.jpg" class="img-responsive">
+<header>
+    <div class="logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center col-xs-2 col-xs-offset-5">
+                    <img src="img/img1.jpg" class="img-responsive">
+                </div>
             </div>
         </div>
     </div>
@@ -45,10 +47,9 @@
 
     <div class="container">
 
-        <form id="contactForm">
+        <form id="contactForm" class="contact-form">
 
             <div class="row">
-
                 <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1">
                     <div class="form-group has-feedback">
                         <input type="email" id="email" name="email" class="form-control" required="required"
@@ -69,9 +70,9 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1">
                     <div class="form-group has-feedback">
-                                <textarea id="message" class="form-control" rows="3"
-                                          placeholder="Тема сообщения" minlength="5"
-                                          maxlength="500" required="required"></textarea>
+                        <textarea id="message" name="message" class="form-control" rows="3"
+                                  placeholder="Текст сообщения" minlength="5"
+                                  maxlength="500" required="required"></textarea>
                     </div>
                 </div>
             </div>
